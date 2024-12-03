@@ -12,13 +12,13 @@ nav {
 }
 
 #logo img {
-  width: 4.125rem; 
+  width: 3.425rem; 
 }
 
 #call-to-action {
-  background-color: #030303;
+  background-color: #090909;
   color: #FFF7F0;
-  padding: 0.875rem 2.8125rem; 
+  padding: 0.8rem 2.8rem; 
   border-radius: 50rem; 
 }
 
@@ -68,23 +68,23 @@ nav {
   top: 10px;
   right: 10px;
   width: 8rem; 
-  height: 12rem; 
+  height: 10rem; 
 }
 
 .image2 {
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 14.375rem; 
-  height: 7.175rem; 
+  width: 10rem; 
+  height: 8rem; 
 }
 
 .image3 {
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 7.375rem; 
-  height: 11.675rem; 
+  width: 8rem; 
+  height: 10rem; 
 }
 
 .profile-section {
@@ -101,8 +101,8 @@ nav {
 }
 
 .profile-pic {
-  width: 27.8125rem; 
-  height: 27.8125rem; 
+  width: 27rem; 
+  height: 27rem; 
   border-radius: 50%;
   background-color: #68c3c6;
   background-size: cover; 
@@ -112,7 +112,7 @@ nav {
   url('./img/illustration-illustrations.png'), 
   url('./img/illustration-photography.png');
 background-size: 200px 100px, 90px 100px; 
-background-position: 0% 30%, 100% 60%; 
+background-position: 0% 0%, 100% 60%; 
 background-repeat: no-repeat, no-repeat; 
 }
 
@@ -122,8 +122,7 @@ background-repeat: no-repeat, no-repeat;
   justify-content: center;
 }
 
-.profile-info {
-  display: flex; 
+.profile-info { 
   flex-direction: column; 
   justify-content: center; 
   align-items: flex-start; 
@@ -134,8 +133,62 @@ background-repeat: no-repeat, no-repeat;
 
 .button {
   display: inline-flex;
-  padding: 0.625rem 1.25rem; 
+  padding: 0.6rem 1.2rem; 
   background: #f87266;
   color: #f9f2f2;
   border-radius: 500px; 
 }
+
+/*  tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  #her h1 {
+    font-size: 2.5rem;
+  }
+
+  .image-container a {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .profile-info {
+    max-width: 20rem;
+    margin: auto;
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Ecelular */
+@media (max-width: 767px) {
+
+#logo img {
+  width: 3rem;
+}
+
+#call-to-action {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.87rem;
+}
+
+#her h1 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.image-container {
+  gap: 0.6rem;
+}
+
+.image-container a { 
+  width: 19rem;
+  height: 17rem;
+  }
+}
+
+
+
+
